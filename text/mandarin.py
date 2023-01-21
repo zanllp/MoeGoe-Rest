@@ -1,5 +1,4 @@
 import os
-import sys
 import re
 from pypinyin import lazy_pinyin, BOPOMOFO
 import jieba
@@ -7,7 +6,7 @@ import cn2an
 import logging
 
 logging.getLogger('jieba').setLevel(logging.WARNING)
-jieba.set_dictionary(os.path.dirname(sys.argv[0])+'/jieba/dict.txt')
+jieba.set_dictionary(os.path.join(__file__, '../../jieba/dict.txt'))
 jieba.initialize()
 
 
