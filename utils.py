@@ -69,6 +69,12 @@ def get_hparams_from_file(config_path):
   hparams = HParams(**config)
   return hparams
 
+def get_hparams_from_text(data):
+  config = loads(data)
+
+  hparams = HParams(**config)
+  return hparams
+
 
 def load_audio_to_torch(full_path, target_sampling_rate):
   audio, sampling_rate = librosa.load(full_path, sr=target_sampling_rate, mono=True)

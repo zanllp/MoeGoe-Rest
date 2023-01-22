@@ -1,14 +1,16 @@
+# 启动
+```sh
+python -m venv ./venv
+source ./venv/bin/activate
+pip install -r requirements.txt # 安装依赖
+uvicorn server:app --reload # 启动rest server
+```
+# rest api doc
+http://127.0.0.1:8000/redoc
 # Links
 - [MoeGoe_GUI](https://github.com/CjangCjengh/MoeGoe_GUI)
 - [Pretrained models](https://github.com/CjangCjengh/TTSModels)
 
-# How to use
-Run MoeGoe.exe
-```
-Path of a VITS model: path\to\model.pth
-Path of a config file: path\to\config.json
-INFO:root:Loaded checkpoint 'path\to\model.pth' (iteration XXX)
-```
 ## Text to speech
 ```
 TTS or VC? (t/v):t
