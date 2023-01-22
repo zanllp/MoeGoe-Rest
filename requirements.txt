@@ -1,10 +1,11 @@
 numba
 librosa
-numpy==1.22.0
+numpy==1.23.0
 scipy
 torch
 unidecode
-pyopenjtalk
+openjtalk>=0.3.0.dev2; platform_system == "Windows"
+pyopenjtalk; platform_system != "Windows"
 jamo
 pypinyin
 jieba
