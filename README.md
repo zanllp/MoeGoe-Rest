@@ -7,6 +7,10 @@ uvicorn server:app --reload # 启动rest server
 ```
 # rest api doc
 http://127.0.0.1:8000/redoc
+
+预训练模型参考下图放到repo目录下，即可通过api获取
+<img width="222" alt="image" src="https://user-images.githubusercontent.com/25872019/214237210-53e0fcc9-1dc5-4544-83ba-5c78e345473e.png">
+
 # Links
 - [MoeGoe_GUI](https://github.com/CjangCjengh/MoeGoe_GUI)
 - [Pretrained models](https://github.com/CjangCjengh/TTSModels)
