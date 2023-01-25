@@ -24,10 +24,13 @@ def read_root():
 def get_model_conf_path(name): return f"pretrained/{name}/config.json"
 def get_model_path(name): return f"pretrained/{name}/model.pth"
 
+class PretraniedModelsProfileData(BaseModel):
+    text_cleaners: List[str]
 
 class PretraniedModelsProfile(BaseModel):
     name: str
     speakers: List[str]
+    data: PretraniedModelsProfileData
 
 
 @app.get("/tts/pretrained-models", response_model=List[PretraniedModelsProfile])
