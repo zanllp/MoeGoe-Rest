@@ -5,6 +5,8 @@ source ./venv/bin/activate
 pip install -r requirements.txt # 安装依赖
 uvicorn server:app --reload # 启动rest server
 ```
+# ui
+https://github.com/zanllp/MoeGoe-Rest-Web-UI
 # rest api doc
 http://127.0.0.1:8000/redoc
 
